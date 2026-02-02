@@ -1,0 +1,76 @@
+{
+  "key": "group_hero_section_REPLACE",
+  "title": "Hero Section",
+  "fields": [
+    {
+      "key": "field_hero_title_REPLACE",
+      "label": "Title",
+      "name": "title",
+      "type": "text",
+      "instructions": "Main heading for the hero section",
+      "required": 1,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "Enter title...",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_hero_subtitle_REPLACE",
+      "label": "Subtitle",
+      "name": "subtitle",
+      "type": "textarea",
+      "instructions": "Supporting text below the title",
+      "required": 0,
+      "rows": 3,
+      "placeholder": "Enter subtitle...",
+      "maxlength": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_hero_cta_REPLACE",
+      "label": "Call to Action",
+      "name": "cta",
+      "type": "link",
+      "instructions": "Primary button link",
+      "required": 0,
+      "return_format": "array"
+    },
+    {
+      "key": "field_hero_background_REPLACE",
+      "label": "Background Image",
+      "name": "background_image",
+      "type": "image",
+      "instructions": "Hero background image (recommended: 1920x1080px)",
+      "required": 0,
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": 1200,
+      "min_height": 600,
+      "mime_types": "jpg,jpeg,png,webp"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "default"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Hero section fields for landing pages"
+}

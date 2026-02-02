@@ -1,0 +1,83 @@
+{
+  "key": "group_card_repeater_REPLACE",
+  "title": "Cards Section",
+  "fields": [
+    {
+      "key": "field_cards_heading_REPLACE",
+      "label": "Section Heading",
+      "name": "heading",
+      "type": "text",
+      "instructions": "Main heading for the cards section",
+      "required": 0
+    },
+    {
+      "key": "field_cards_items_REPLACE",
+      "label": "Cards",
+      "name": "cards",
+      "type": "repeater",
+      "instructions": "Add cards to display",
+      "required": 0,
+      "layout": "block",
+      "button_label": "Add Card",
+      "min": 0,
+      "max": 0,
+      "sub_fields": [
+        {
+          "key": "field_card_image_REPLACE",
+          "label": "Image",
+          "name": "image",
+          "type": "image",
+          "instructions": "Card image (recommended: 400x300px)",
+          "parent": "field_cards_items_REPLACE",
+          "return_format": "array",
+          "preview_size": "medium",
+          "library": "all"
+        },
+        {
+          "key": "field_card_title_REPLACE",
+          "label": "Title",
+          "name": "title",
+          "type": "text",
+          "instructions": "Card title",
+          "parent": "field_cards_items_REPLACE",
+          "required": 1
+        },
+        {
+          "key": "field_card_description_REPLACE",
+          "label": "Description",
+          "name": "description",
+          "type": "textarea",
+          "instructions": "Card description text",
+          "parent": "field_cards_items_REPLACE",
+          "rows": 4
+        },
+        {
+          "key": "field_card_link_REPLACE",
+          "label": "Link",
+          "name": "link",
+          "type": "link",
+          "instructions": "Optional link for the card",
+          "parent": "field_cards_items_REPLACE",
+          "return_format": "array"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "Repeating cards section"
+}

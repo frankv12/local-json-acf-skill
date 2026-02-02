@@ -1,0 +1,183 @@
+{
+  "key": "group_page_builder_REPLACE",
+  "title": "Page Builder",
+  "fields": [
+    {
+      "key": "field_page_builder_sections_REPLACE",
+      "label": "Page Sections",
+      "name": "page_sections",
+      "type": "flexible_content",
+      "instructions": "Build your page by adding sections below",
+      "required": 0,
+      "button_label": "Add Section",
+      "min": "",
+      "max": "",
+      "layouts": {
+        "layout_hero_REPLACE": {
+          "key": "layout_hero_REPLACE",
+          "name": "hero",
+          "label": "Hero Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_hero_title_REPLACE",
+              "label": "Title",
+              "name": "title",
+              "type": "text",
+              "parent": "layout_hero_REPLACE"
+            },
+            {
+              "key": "field_hero_subtitle_REPLACE",
+              "label": "Subtitle",
+              "name": "subtitle",
+              "type": "textarea",
+              "parent": "layout_hero_REPLACE",
+              "rows": 3
+            },
+            {
+              "key": "field_hero_image_REPLACE",
+              "label": "Background Image",
+              "name": "background_image",
+              "type": "image",
+              "parent": "layout_hero_REPLACE",
+              "return_format": "array",
+              "preview_size": "medium"
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_content_REPLACE": {
+          "key": "layout_content_REPLACE",
+          "name": "content",
+          "label": "Content Section",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_content_heading_REPLACE",
+              "label": "Heading",
+              "name": "heading",
+              "type": "text",
+              "parent": "layout_content_REPLACE"
+            },
+            {
+              "key": "field_content_text_REPLACE",
+              "label": "Content",
+              "name": "content",
+              "type": "wysiwyg",
+              "parent": "layout_content_REPLACE",
+              "tabs": "all",
+              "toolbar": "full",
+              "media_upload": 1
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_cards_REPLACE": {
+          "key": "layout_cards_REPLACE",
+          "name": "cards",
+          "label": "Cards Grid",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_cards_heading_REPLACE",
+              "label": "Section Heading",
+              "name": "heading",
+              "type": "text",
+              "parent": "layout_cards_REPLACE"
+            },
+            {
+              "key": "field_cards_items_REPLACE",
+              "label": "Cards",
+              "name": "cards",
+              "type": "repeater",
+              "parent": "layout_cards_REPLACE",
+              "layout": "block",
+              "button_label": "Add Card",
+              "sub_fields": [
+                {
+                  "key": "field_card_title_REPLACE",
+                  "label": "Title",
+                  "name": "title",
+                  "type": "text",
+                  "parent": "field_cards_items_REPLACE"
+                },
+                {
+                  "key": "field_card_description_REPLACE",
+                  "label": "Description",
+                  "name": "description",
+                  "type": "textarea",
+                  "parent": "field_cards_items_REPLACE",
+                  "rows": 3
+                },
+                {
+                  "key": "field_card_icon_REPLACE",
+                  "label": "Icon",
+                  "name": "icon",
+                  "type": "image",
+                  "parent": "field_cards_items_REPLACE",
+                  "return_format": "array"
+                }
+              ]
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_cta_REPLACE": {
+          "key": "layout_cta_REPLACE",
+          "name": "cta",
+          "label": "Call to Action",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_cta_title_REPLACE",
+              "label": "Title",
+              "name": "title",
+              "type": "text",
+              "parent": "layout_cta_REPLACE"
+            },
+            {
+              "key": "field_cta_text_REPLACE",
+              "label": "Text",
+              "name": "text",
+              "type": "textarea",
+              "parent": "layout_cta_REPLACE",
+              "rows": 3
+            },
+            {
+              "key": "field_cta_button_REPLACE",
+              "label": "Button",
+              "name": "button",
+              "type": "link",
+              "parent": "layout_cta_REPLACE",
+              "return_format": "array"
+            }
+          ],
+          "min": "",
+          "max": ""
+        }
+      }
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "template-builder.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content"
+  ],
+  "active": true,
+  "description": "Flexible page builder with multiple section types"
+}
