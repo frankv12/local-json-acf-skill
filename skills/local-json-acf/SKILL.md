@@ -1,4 +1,3 @@
-
 ---
 name: acf-local-json
 description: Generate Advanced Custom Fields (ACF) Local JSON configurations for WordPress from visual designs or HTML structures. Use when creating ACF field groups, converting designs to ACF schemas, building WordPress custom fields from mockups, or when working with ACF Pro Local JSON format. Supports flexible content, repeaters, clone fields, and all ACF field types.
