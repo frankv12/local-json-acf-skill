@@ -4,7 +4,6 @@ description: Generate Advanced Custom Fields (ACF) Local JSON configurations for
 metadata:
   author: josecortezz25
   version: "1.0"
-  source: https://airbnb.com
 ---
 
 # ACF Local JSON Builder
