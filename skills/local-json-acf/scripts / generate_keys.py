@@ -8,9 +8,11 @@ import random
 import string
 import sys
 
+
 def generate_hash(length=6):
     """Generate a random alphanumeric hash"""
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
+
 
 def to_snake_case(text):
     """Convert text to snake_case"""
@@ -25,11 +27,13 @@ def to_snake_case(text):
         text = text.replace('__', '_')
     return text.strip('_')
 
+
 def generate_group_key(name):
     """Generate a unique group key"""
     snake_name = to_snake_case(name)
     hash_suffix = generate_hash()
     return f"group_{snake_name}_{hash_suffix}"
+
 
 def generate_field_key(name):
     """Generate a unique field key"""
@@ -37,11 +41,13 @@ def generate_field_key(name):
     hash_suffix = generate_hash()
     return f"field_{snake_name}_{hash_suffix}"
 
+
 def generate_layout_key(name):
     """Generate a unique layout key"""
     snake_name = to_snake_case(name)
     hash_suffix = generate_hash()
     return f"layout_{snake_name}_{hash_suffix}"
+
 
 def main():
     if len(sys.argv) < 3:
@@ -49,10 +55,10 @@ def main():
         print("Types: group, field, layout")
         print("Example: python generate_keys.py field 'Hero Title'")
         sys.exit(1)
-    
+
     key_type = sys.argv[1].lower()
     name = ' '.join(sys.argv[2:])
-    
+
     if key_type == 'group':
         print(generate_group_key(name))
     elif key_type == 'field':
@@ -63,6 +69,7 @@ def main():
         print(f"Unknown type: {key_type}")
         print("Valid types: group, field, layout")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
